@@ -1,0 +1,108 @@
+.projects {
+    background-color: var(--cinza-escuro-primario);
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--ciano);
+    padding-bottom: 16px; 
+    line-height: 24px;
+}
+
+
+.projects-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 12px;
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.info-imagem {
+    border-radius: 50%;
+    width: 28px;
+}
+
+
+
+.info-status{
+    padding: 4px 12px;
+    line-height: 20px;
+    border-radius: 14px;
+}
+
+
+.projects-info:nth-child(2) {background-color: var(--cinza-escuro-secundario);}
+.projects-info:nth-child(3) {background-color: var(--preto);}
+.projects-info:nth-child(4) {background-color: var(--cinza-escuro-secundario);}
+.projects-info:nth-child(5) {background-color: var(--preto);}
+.projects-info:nth-child(6) {background-color: var(--cinza-escuro-secundario);}
+
+.projects-info:nth-child(2)>.info-status {
+    background-color: var(--roxo-secundario);
+    color: var(--roxo-primario);
+}
+.projects-info:nth-child(3)>.info-status {
+    background-color: var(--verde-secundario);
+    color: var(--verde-primario);
+}
+.projects-info:nth-child(4)>.info-status {
+    background-color: var(--azul-secundario);
+    color: var(--azul-primario);
+}
+.projects-info:nth-child(5)>.info-status {
+    background-color: var(--amarelo-secundario);
+    color: var(--amarelo-primario);
+}
+.projects-info:nth-child(6)>.info-status {
+    background-color: var(--cinza-escuro-primario);
+    color: var(--cinza-claro);
+}
+
+.info-valor,
+.info-data,
+.projects-conteudo__legenda {
+    display: none;
+}
+
+
+@media (min-width:800px) {
+    .projects-conteudo {
+        flex-direction: row;
+    }
+    
+    .projects-conteudo__legenda {
+        display: flex;
+    }
+    .conteudo__legenda {
+        width: 225%;
+    }
+
+    .info-data,
+    .info-valor,
+    .info-status{
+        display: block;
+        width: 25%;
+    }
+
+    .projects-info {
+        justify-content: center;
+        
+    }
+    .info {
+        width: 25%;
+    }
+}

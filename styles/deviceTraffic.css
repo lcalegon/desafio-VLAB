@@ -1,0 +1,104 @@
+.dev-loc{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (min-width: 800px) {
+    .dev-loc {
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+    .device-container {
+        width: 50%;
+    }
+}
+
+.device-container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--cinza-escuro-primario);
+    border-radius: 16px;
+}
+.dev-botao{
+    display:none;
+}
+
+.dev-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--azul-primario);
+}
+
+.dev-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dev-grafico {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: end;
+    align-items: center;
+    gap: 16px;
+    width: 40px;
+}
+.dev-grafico:nth-child(1)>.dev-grafico__barra{
+    height: 40%;
+}
+.dev-grafico:nth-child(2)>.dev-grafico__barra{
+    height: 70%;
+}
+.dev-grafico:nth-child(3)>.dev-grafico__barra{
+    height: 50%;
+}
+.dev-grafico:nth-child(4)>.dev-grafico__barra{
+    height: 100%;
+}
+.dev-grafico:nth-child(5)>.dev-grafico__barra{
+    height: 70%;
+    background-image: var(--degrade-azul);
+}
+.dev-grafico:nth-child(6)>.dev-grafico__barra{
+    height: 30%;
+}
+
+.dev-grafico>h4 {
+    background: var(--degrade-preto);
+    line-height: 20px;
+    padding: 4px 8px;
+    margin-bottom: -8px;
+    border-radius: 16px;
+}
+
+.dev-grafico__barra {
+    background-color: #ffffff10;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.dev-grafico__legenda {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+@media (min-width:600px){
+    .dev-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dev-botao {
+        display: block;
+        line-height: 24px;
+        font-size: 16px;
+        padding: 8px 16px;
+        border-radius: 16px;
+        background: #ffffff10;
+    }
+}

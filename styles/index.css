@@ -1,0 +1,83 @@
+@import url(./header.css);
+@import url(./stats.css);
+@import url(./users.css);
+@import url(./deviceTraffic.css);
+@import url(./locationTraffic.css);
+@import url(./productTraffic.css);
+@import url(./projects.css);
+@import url(./sidebar.css);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --branco: #ffffff;
+    --preto: #2A2A2A;
+    --cinza-escuro-primario: #353535;
+    --cinza-escuro-secundario: #303030;
+    --cinza-claro: #7B7B7B;
+    --roxo-primario: #BF5AF2;
+    --roxo-secundario: #4C2461;
+    --azul-primario: #0A84FF;
+    --azul-secundario: #043566;
+    --verde-primario: #30D158;
+    --verde-secundario: #15591F;
+    --amarelo-primario: #FDD50A;
+    --amarelo-secundario: #665604;
+    --vermelho: #FF453A;
+    --ciano: #63E6E2;
+
+    --fonte:'Poppins';
+    --degrade-preto: linear-gradient(#383838, #616161);
+    --degrade-azul: linear-gradient( #1B8EF2, #69B4FF);
+}
+
+body {
+    background-color: var(--preto);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.pagina {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+}
+
+.pagina-conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-container {
+    display: none;
+}
+.footer {
+    display: none;
+}
+
+
+@media (min-width:1250px){   
+    
+    .footer {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        padding: 16px;
+        font-size: 12px;
+        color: var(--cinza-claro);
+    }
+
+    .footer-opcoes {
+        display: flex;
+        gap: 8px;
+    }
+    .sidebar-container {
+        display: flex;
+        width: 240px;
+        padding: 16px;
+    }
+}
